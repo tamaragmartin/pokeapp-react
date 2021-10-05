@@ -1,9 +1,11 @@
-import React, { Component } from "react";
+import React from 'react'
 
-class Header extends Component {
-  render() {
-    return <h1>PokeAPP</h1>;
-  }
+export const Header = () => {
+  return (
+    <div>
+      <h1>PokeAPP</h1>
+    </div>
+  )
 }
 
 export default Header;

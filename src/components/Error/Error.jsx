@@ -1,9 +1,11 @@
-import React, { Component } from "react";
+import React from 'react'
 
-class Error extends Component {
-  render() {
-    return <div>Error</div>;
-  }
+export const Error = () => {
+  return (
+    <div>
+      Error
+    </div>
+  )
 }
 
 export default Error;

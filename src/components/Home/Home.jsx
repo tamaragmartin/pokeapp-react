@@ -1,9 +1,21 @@
-import React, { Component } from "react";
+import React from 'react'
 
-class Home extends Component {
-  render() {
-    return <div>Home</div>;
-  }
+import Card from '../Card'
+
+const Home = () => {
+  return (
+    <>
+      <section>
+        <form action="">
+          <input type="text" name="search" />
+          <button>Buscar</button>
+        </form>
+      </section>
+      <section>
+        <Card />
+      </section>
+    </>
+  )
 }
 
 export default Home;
