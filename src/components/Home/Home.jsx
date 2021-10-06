@@ -58,7 +58,7 @@ const Home = () => {
             onChange={handleChange}
           />
           <button className="search--button" onClick={fetchData}>Gotcha!</button> 
-          <button className="search--refresh" onClick={refresh}>Reset</button> 
+          <button className="search--refresh" onClick={refresh}>Restart</button> 
         </form>
       </section>
       <section className="pokelist">

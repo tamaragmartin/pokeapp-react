@@ -18,17 +18,17 @@
       font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
     }
     &--link {
-        color: pink;
+        color: $palette3;
         font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
         font-size: 20px;
         text-decoration: none;
         font-weight: bolder;
         &:hover {
-          color: green;
+          color: $palette2;
           text-decoration: none;
         }
         &:visited {
-          color: orange;
+          color: $palette3;
           text-decoration: none;
         }
     }
