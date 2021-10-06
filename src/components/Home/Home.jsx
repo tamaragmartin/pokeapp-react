@@ -10,33 +10,33 @@ const Home = () => {
   const { pokemons, setPokemon } = useContext(userContext);
   const inputSearch = useRef(null);
 
-  const fetchData = () => {
-    (async () => {
-      const resp = await axios.get(
-        "https://pokeapi.co/api/v2/pokemon/" + input
-      );
-      setPokemon([...pokemons, resp.data]);
-    })();
-  };
+   const fetchData = () => {
+     (async () => {
+       const resp = await axios.get(
+         "https://pokeapi.co/api/v2/pokemon/" + input
+       );
+       setPokemon([...pokemons, resp.data]);
+     })();
+   };
 
   // const {loading,result} = useFetch("https://pokeapi.co/api/v2/pokemon"+input)
   //   useEffect(async ()=>{
   //     setPokemon([...pokemons, result.results])
   //   }, [result])
 
-  const handleChange = (e) => {
-    setInput(e.target.value);
-  };
+   const handleChange = (e) => {
+     setInput(e.target.value);
+   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
   };
 
   //borrar texto del input
-  useEffect(() => {
-    inputSearch.current.value = "";
-    setInput("");
-  }, [pokemons]);
+   useEffect(() => {
+     inputSearch.current.value = "";
+     setInput("");
+   }, [pokemons]);
   //  const inputs = document.querySelectorAll("input");
   //  inputs.forEach((input) => (input.value = ""));
 
