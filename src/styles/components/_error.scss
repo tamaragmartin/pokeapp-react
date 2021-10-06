@@ -25,9 +25,11 @@
         font-weight: bolder;
         &:hover {
           color: green;
+          text-decoration: none;
         }
         &:visited {
-          color: $palette5;
+          color: orange;
+          text-decoration: none;
         }
     }
     
