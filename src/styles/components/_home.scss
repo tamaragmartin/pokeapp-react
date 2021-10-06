@@ -1,0 +1,76 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.search {
+  
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+
+  &--input {
+    text-align: center;
+    align-self: center;
+    width: 140px;
+    height: 22px;
+    margin-bottom: 15px;
+    padding: 0px 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid $palette5;
+    outline: none;
+    background-color: transparent;
+    color: $palette4;
+
+    &:focus {
+      border-bottom: 1px solid $palette4;
+    }
+  }
+  &--button {
+    text-align: center;
+    align-self: center;
+    align-self: top;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #50514f;
+    border: 2px solid #50514f;
+    font-weight: bolder;
+    background: linear-gradient(180deg, #e8574f 50%, white 50%);
+    width: 180px;
+    height: 60px;
+    transition-duration: 0.4s;
+    box-shadow: 0px 5px 20px -10px #50514f;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-decoration: none;
+    &:hover {
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      perspective: 1000px;
+    }
+
+    @keyframes shake {
+      10%,
+      90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      20%,
+      80% {
+        transform: translate3d(2px, 0, 0);
+      }
+
+      30%,
+      50%,
+      70% {
+        transform: translate3d(-2px, 0, 0);
+      }
+      40%,
+      60% {
+        transform: translate3d(2px, 0, 0);
+      }
+    }
+  }
+}

@@ -42,19 +42,20 @@ const Home = () => {
 
   return (
     <>
-      <section>
-        <form onSubmit={handleSubmit}>
+      <section >
+        <form className="search" onSubmit={handleSubmit} >
           <input
-            placeholder="Find a Pokemon"
+            className="search--input"
+            placeholder="Catch a Pokémon"
             type="text"
             name="search"
             ref={inputSearch}
             onChange={handleChange}
           />
-          <button onClick={fetchData}>Search</button>
+          <button className="search--button" onClick={fetchData}>Gotcha!</button>
         </form>
       </section>
-      <section>
+      <section className="pokelist">
         <ListaPokemon />
       </section>
     </>

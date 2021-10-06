@@ -1,0 +1,19 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700");
+
+.footer {
+    @include flexcenter;
+    padding: 20px;
+    background-color:$palette5;
+    width: 100vw;
+    height: 8%;
+    
+    & > h5 {
+      font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+      flex-basis: 90%;
+      font-size: 14px;
+      color: #fff;
+    }
+  }

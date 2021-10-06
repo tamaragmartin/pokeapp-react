@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 export const Nav = () => {
   return (
-    <div>
+    <nav className="nav">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={() => window.location.reload()}></Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
