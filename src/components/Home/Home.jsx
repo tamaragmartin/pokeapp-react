@@ -28,11 +28,11 @@ const Home = () => {
     setInput(e.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+   const handleSubmit = (e) => {
+     e.preventDefault();
+   };
 
-  //borrar texto del input
+  //Borrar texto del input
   useEffect(() => {
     inputSearch.current.value = "";
     setInput("");
