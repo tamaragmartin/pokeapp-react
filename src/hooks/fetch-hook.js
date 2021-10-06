@@ -1,23 +1,13 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+// import { useState, useEffect } from "react";
+// import axios from "axios";
 
-const useFetch = (url) => {
-  const [loading, setLoading] = useState(true);
-  const [result, setResult] = useState([]);
+// export const useFetch = (value) => {
+//   (async () => {
+//          const resp = await axios.get(
+//            "https://pokeapi.co/api/v2/pokemon/" + input
+//          );
+//          setPokemon([...pokemons, resp.data]);
+//        })();
+// };
 
-  useEffect(async () => {
-    try {
-      const response = await axios.get(url);
-      setTimeout(() => {
-        setResult(response.data);
-        setLoading(false);
-      }, 2000);
-    } catch (err) {
-      console.log(err);
-    }
-  }, [url]);
-
-  return { loading, result };
-};
-
-export default useFetch;
+// export default useFetch;

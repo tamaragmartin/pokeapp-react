@@ -8,6 +8,7 @@ const ListaPokemon = () => {
   const paintCard = () => {
     return pokemons.map((card, i) => <Card key={i} data={card} />);
   };
+  
   return paintCard();
 };
 
