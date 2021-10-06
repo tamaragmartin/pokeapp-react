@@ -1,9 +1,16 @@
-import React, { Component } from "react";
+import React from 'react'
+import Nav from "../Nav/Nav";
 
-class Header extends Component {
-  render() {
-    return <div>Header</div>;
-  }
+// import logo from "../../assets/";
+
+export const Header = () => {
+  return (
+    <header className="header">
+      {/* <img src={logo} alt="newspaper" className="header--logo" /> */}
+      <h1>TechCrunch's News Feed</h1>
+      <Nav />
+    </header>
+  )
 }
 
 export default Header;
