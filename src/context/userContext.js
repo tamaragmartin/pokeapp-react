@@ -1,2 +1,2 @@
 import React from 'react';
-export const pokeContext = React.createContext(null);
+export const userContext = React.createContext(null);
