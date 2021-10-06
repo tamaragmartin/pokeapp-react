@@ -1,0 +1,47 @@
+@mixin flexcenter {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @mixin input {
+    width: 90%;
+    margin-bottom: 25px;
+    padding: 0px 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid blue;
+    outline: none;
+    background-color: transparent;
+    color: $palette5;
+    &:placeholder {
+      color: $palette4;
+    }
+    &:focus {
+      border-bottom: 1px solid $palette4;
+    }
+  }
+  
+  @mixin button {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 4px;
+    background-color: $palette1;
+    border: none;
+    color: blue;
+    width: 120px;
+    height: 40px;
+    transition-duration: 0.4s;
+    box-shadow: 2px 2px 2px $palette7;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-decoration: none;
+    opacity: 0.8;
+    
+  }
+
