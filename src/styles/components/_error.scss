@@ -2,37 +2,34 @@
 @import "../utils/variables";
 
 .error {
-    & > h1 {
-      margin-top: 0px;
-      flex-basis: 90%;
-      font-size: 85px;
+  & > h1 {
+    margin-top: 0px;
+    flex-basis: 90%;
+    font-size: 85px;
+    color: $palette2;
+    text-shadow: 5px 5px 5px $palette5;
+    font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+  }
+  & > h3 {
+    margin-top: 0px;
+    flex-basis: 90%;
+    font-size: 35px;
+    color: $palette5;
+    font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+  }
+  &--link {
+    color: $palette3;
+    font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    &:hover {
       color: $palette2;
-      text-shadow: 5px 5px 5px $palette5;
-      font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+      text-decoration: none;
     }
-    & > h3 {
-      margin-top: 0px;
-      flex-basis: 90%;
-      font-size: 35px;
-      color: $palette5;
-      font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+    &:visited {
+      color: $palette3;
+      text-decoration: none;
     }
-    &--link {
-        color: $palette3;
-        font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
-        font-size: 20px;
-        text-decoration: none;
-        font-weight: bolder;
-        &:hover {
-          color: $palette2;
-          text-decoration: none;
-        }
-        &:visited {
-          color: $palette3;
-          text-decoration: none;
-        }
-    }
-    
-    
-    }
-
+  }
+}

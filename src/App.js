@@ -1,5 +1,5 @@
 import "./App.css";
-import './styles/styles.scss'
+import "./styles/styles.scss";
 
 import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";

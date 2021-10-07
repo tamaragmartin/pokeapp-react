@@ -32,7 +32,6 @@ const Card = (props) => {
               {pokemon.moves[2].move.name}
             </h4>
           </div>
-
         </article>
       </section>
     </>
